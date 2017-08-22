@@ -6,10 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		B7AB5D031F4BF88A00DA47E2 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		B7AB5D041F4BF8B500DA47E2 /* BaseViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		B7AB5CFC1F4BF87900DA47E2 = {
 			isa = PBXGroup;
 			children = (
+				B7AB5D041F4BF8B500DA47E2 /* BaseViewModelDelegate.swift */,
+				B7AB5D031F4BF88A00DA47E2 /* BaseVM.swift */,
 			);
 			sourceTree = "<group>";
 		};
