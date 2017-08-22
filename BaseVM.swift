@@ -10,7 +10,6 @@ import Foundation
 import AFNetworking
 import AlamofireObjectMapper
 import ObjectMapper
-import SwiftyJSON
 
 class BaseViewModel: BaseViewModelDelegate {
     // MARK: Constants
