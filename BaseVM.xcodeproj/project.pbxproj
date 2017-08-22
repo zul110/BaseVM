@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		B7AB5D031F4BF88A00DA47E2 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
-		B7AB5D041F4BF8B500DA47E2 /* BaseViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelDelegate.swift; sourceTree = "<group>"; };
-		B7AB5D051F4C05FA00DA47E2 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
-		B7AB5D061F4C061400DA47E2 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		B7AB5D071F4C066000DA47E2 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
-		B7AB5D0C1F4C06E900DA47E2 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
-		B7AB5D0F1F4C074700DA47E2 /* ExampleView_HomeVMDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView_HomeVMDelegateExtension.swift; sourceTree = "<group>"; };
-		B7AB5D111F4C086C00DA47E2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B7AB5D131F4C0A6100DA47E2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = API.swift; path = Helpers/Structs/API.swift; sourceTree = "<group>"; };
+		B7AB5D141F4C0A8E00DA47E2 /* ExampleView_HomeVMDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleView_HomeVMDelegateExtension.swift; path = Views/Extensions/ExampleView_HomeVMDelegateExtension.swift; sourceTree = "<group>"; };
+		B7AB5D151F4C0A9C00DA47E2 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExampleView.swift; path = Views/ExampleView.swift; sourceTree = "<group>"; };
+		B7AB5D161F4C0AB400DA47E2 /* BaseVMDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseVMDelegate.swift; path = ViewModels/Delegates/BaseVMDelegate.swift; sourceTree = "<group>"; };
+		B7AB5D171F4C0AC000DA47E2 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseVM.swift; path = ViewModels/BaseVM.swift; sourceTree = "<group>"; };
+		B7AB5D181F4C0AD000DA47E2 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeVM.swift; path = ViewModels/HomeViewModel/HomeVM.swift; sourceTree = "<group>"; };
+		B7AB5D191F4C0AE900DA47E2 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeModel.swift; path = Models/HomeModel.swift; sourceTree = "<group>"; };
+		B7AB5D1A1F4C0AE900DA47E2 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemModel.swift; path = Models/ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -31,8 +31,8 @@
 		B7AB5D081F4C06A200DA47E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B7AB5D071F4C066000DA47E2 /* ItemModel.swift */,
-				B7AB5D061F4C061400DA47E2 /* HomeModel.swift */,
+				B7AB5D191F4C0AE900DA47E2 /* HomeModel.swift */,
+				B7AB5D1A1F4C0AE900DA47E2 /* ItemModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -42,7 +42,7 @@
 			children = (
 				B7AB5D0B1F4C06C900DA47E2 /* Delegates */,
 				B7AB5D0A1F4C06BC00DA47E2 /* HomeViewModel */,
-				B7AB5D031F4BF88A00DA47E2 /* BaseVM.swift */,
+				B7AB5D171F4C0AC000DA47E2 /* BaseVM.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -50,7 +50,7 @@
 		B7AB5D0A1F4C06BC00DA47E2 /* HomeViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B7AB5D051F4C05FA00DA47E2 /* HomeVM.swift */,
+				B7AB5D181F4C0AD000DA47E2 /* HomeVM.swift */,
 			);
 			name = HomeViewModel;
 			sourceTree = "<group>";
@@ -58,7 +58,7 @@
 		B7AB5D0B1F4C06C900DA47E2 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				B7AB5D041F4BF8B500DA47E2 /* BaseViewModelDelegate.swift */,
+				B7AB5D161F4C0AB400DA47E2 /* BaseVMDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -67,7 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				B7AB5D0E1F4C073700DA47E2 /* Extensions */,
-				B7AB5D0C1F4C06E900DA47E2 /* ExampleView.swift */,
+				B7AB5D151F4C0A9C00DA47E2 /* ExampleView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -75,7 +75,7 @@
 		B7AB5D0E1F4C073700DA47E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B7AB5D0F1F4C074700DA47E2 /* ExampleView_HomeVMDelegateExtension.swift */,
+				B7AB5D141F4C0A8E00DA47E2 /* ExampleView_HomeVMDelegateExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 		B7AB5D121F4C087000DA47E2 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
-				B7AB5D111F4C086C00DA47E2 /* API.swift */,
+				B7AB5D131F4C0A6100DA47E2 /* API.swift */,
 			);
 			name = Structs;
 			sourceTree = "<group>";
